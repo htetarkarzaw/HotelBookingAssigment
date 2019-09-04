@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OuterHotelCollectionViewCell" customModule="HotelBookingAssigment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc4-k0-0GM">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="125"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0bW-dR-L5W">
+                                <rect key="frame" x="4" y="4" width="308" height="117"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JTh-Bl-fBZ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0bW-dR-L5W" firstAttribute="leading" secondItem="Gc4-k0-0GM" secondAttribute="leading" constant="4" id="2TX-As-qdE"/>
+                            <constraint firstAttribute="bottom" secondItem="0bW-dR-L5W" secondAttribute="bottom" constant="4" id="ApR-a9-HI7"/>
+                            <constraint firstAttribute="trailing" secondItem="0bW-dR-L5W" secondAttribute="trailing" constant="4" id="l8G-Q1-Dn2"/>
+                            <constraint firstItem="0bW-dR-L5W" firstAttribute="top" secondItem="Gc4-k0-0GM" secondAttribute="top" constant="4" id="whl-Lx-rue"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gc4-k0-0GM" secondAttribute="trailing" id="284-IF-22r"/>
+                <constraint firstItem="Gc4-k0-0GM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="68N-WW-tYU"/>
+                <constraint firstAttribute="bottom" secondItem="Gc4-k0-0GM" secondAttribute="bottom" id="VMN-zN-FPz"/>
+                <constraint firstItem="Gc4-k0-0GM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o75-bU-Rkm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="316" height="125"/>
+            <connections>
+                <outlet property="innerHotelView" destination="0bW-dR-L5W" id="LI4-0I-QOm"/>
+            </connections>
+            <point key="canvasLocation" x="330.43478260869568" y="171.76339285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

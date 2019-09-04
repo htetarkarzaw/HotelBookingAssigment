@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InnerHotelCollectionViewCell" customModule="HotelBookingAssigment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="290"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-ff-D7W">
+                        <rect key="frame" x="0.0" y="0.0" width="462" height="290"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iko-mp-DRd" customClass="CardView" customModule="HotelBookingAssigment" customModuleProvider="target">
+                                <rect key="frame" x="4" y="4" width="454" height="203"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imag_hotel" translatesAutoresizingMaskIntoConstraints="NO" id="rxq-1E-b6I">
+                                        <rect key="frame" x="0.0" y="0.0" width="454" height="203"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_star" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-1d-0PA">
+                                        <rect key="frame" x="12" y="176" width="15" height="15"/>
+                                        <color key="tintColor" red="1" green="0.95656223880000002" blue="0.34697765949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="A7V-qu-TRA"/>
+                                            <constraint firstAttribute="height" constant="15" id="HbZ-nP-WAJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.3 (21 rating)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQe-AZ-lp4">
+                                        <rect key="frame" x="31" y="175" width="91" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwu-aF-3ZT" customClass="CardView" customModule="HotelBookingAssigment" customModuleProvider="target">
+                                        <rect key="frame" x="379" y="12" width="63" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$89/day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAC-kB-358">
+                                                <rect key="frame" x="4" y="4" width="55" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="primary"/>
+                                        <constraints>
+                                            <constraint firstItem="dAC-kB-358" firstAttribute="leading" secondItem="Uwu-aF-3ZT" secondAttribute="leading" constant="4" id="9WZ-xs-gH2"/>
+                                            <constraint firstAttribute="bottom" secondItem="dAC-kB-358" secondAttribute="bottom" constant="4" id="YFG-2m-RoX"/>
+                                            <constraint firstAttribute="trailing" secondItem="dAC-kB-358" secondAttribute="trailing" constant="4" id="aLC-zc-XTf"/>
+                                            <constraint firstItem="dAC-kB-358" firstAttribute="top" secondItem="Uwu-aF-3ZT" secondAttribute="top" constant="4" id="dnx-11-vNq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Uwu-aF-3ZT" firstAttribute="top" secondItem="iko-mp-DRd" secondAttribute="top" constant="12" id="60E-U7-ymu"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vQe-AZ-lp4" secondAttribute="trailing" constant="12" id="ExA-IV-Rwk"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uwu-aF-3ZT" secondAttribute="trailing" constant="12" id="Nzg-ge-cR9"/>
+                                    <constraint firstItem="rxq-1E-b6I" firstAttribute="top" secondItem="iko-mp-DRd" secondAttribute="top" id="PRC-N5-F9R"/>
+                                    <constraint firstAttribute="bottom" secondItem="rxq-1E-b6I" secondAttribute="bottom" id="Qbt-9g-ODI"/>
+                                    <constraint firstAttribute="bottom" secondItem="VCL-1d-0PA" secondAttribute="bottom" constant="12" id="SrK-2I-OT5"/>
+                                    <constraint firstAttribute="trailing" secondItem="rxq-1E-b6I" secondAttribute="trailing" id="Vph-dK-GdA"/>
+                                    <constraint firstItem="VCL-1d-0PA" firstAttribute="leading" secondItem="iko-mp-DRd" secondAttribute="leading" constant="12" id="eRp-kC-jfi"/>
+                                    <constraint firstItem="vQe-AZ-lp4" firstAttribute="centerY" secondItem="VCL-1d-0PA" secondAttribute="centerY" id="mhj-1r-Z4N"/>
+                                    <constraint firstItem="vQe-AZ-lp4" firstAttribute="leading" secondItem="VCL-1d-0PA" secondAttribute="trailing" constant="4" id="sHa-uM-2ce"/>
+                                    <constraint firstItem="rxq-1E-b6I" firstAttribute="leading" secondItem="iko-mp-DRd" secondAttribute="leading" id="vaA-yp-lOP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngwe Saung , Myanmar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qm8-YN-at6">
+                                <rect key="frame" x="4" y="251" width="454" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tulip Hotel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqU-X7-SFh">
+                                <rect key="frame" x="4" y="219" width="454" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qm8-YN-at6" firstAttribute="top" secondItem="iqU-X7-SFh" secondAttribute="bottom" constant="12" id="FjY-md-jp5"/>
+                            <constraint firstItem="iqU-X7-SFh" firstAttribute="trailing" secondItem="iko-mp-DRd" secondAttribute="trailing" id="HZc-wX-aKi"/>
+                            <constraint firstAttribute="trailing" secondItem="iko-mp-DRd" secondAttribute="trailing" constant="4" id="Tlp-43-Ooq"/>
+                            <constraint firstItem="Qm8-YN-at6" firstAttribute="trailing" secondItem="iqU-X7-SFh" secondAttribute="trailing" id="VFy-Tl-Kpn"/>
+                            <constraint firstItem="iqU-X7-SFh" firstAttribute="top" secondItem="iko-mp-DRd" secondAttribute="bottom" constant="12" id="ViQ-er-Pp6"/>
+                            <constraint firstItem="iko-mp-DRd" firstAttribute="leading" secondItem="aCg-ff-D7W" secondAttribute="leading" constant="4" id="Vja-2C-Xqw"/>
+                            <constraint firstItem="Qm8-YN-at6" firstAttribute="leading" secondItem="iqU-X7-SFh" secondAttribute="leading" id="aKT-4W-qz9"/>
+                            <constraint firstItem="iko-mp-DRd" firstAttribute="top" secondItem="aCg-ff-D7W" secondAttribute="top" constant="4" id="h8e-Xb-PAt"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Qm8-YN-at6" secondAttribute="bottom" constant="12" id="pla-fZ-jjr"/>
+                            <constraint firstItem="iqU-X7-SFh" firstAttribute="leading" secondItem="iko-mp-DRd" secondAttribute="leading" id="rMp-Te-yMT"/>
+                            <constraint firstItem="iko-mp-DRd" firstAttribute="height" secondItem="aCg-ff-D7W" secondAttribute="height" multiplier="0.7" id="vlW-m0-reC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aCg-ff-D7W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1xg-mK-Xuq"/>
+                <constraint firstItem="aCg-ff-D7W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7kb-kh-Au2"/>
+                <constraint firstAttribute="trailing" secondItem="aCg-ff-D7W" secondAttribute="trailing" id="CYw-OX-hbq"/>
+                <constraint firstAttribute="bottom" secondItem="aCg-ff-D7W" secondAttribute="bottom" id="dwB-kv-cjg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="462" height="290"/>
+            <point key="canvasLocation" x="436.23188405797106" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_star" width="25" height="25"/>
+        <image name="imag_hotel" width="313" height="208.5"/>
+        <namedColor name="primary">
+            <color red="0.47450980392156861" green="0.054901960784313725" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
